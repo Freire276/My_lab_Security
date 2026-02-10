@@ -32,7 +32,7 @@ O notebook HP apresentava limitações de hardware. Para contornar isso:
 * Configuração de rede estática para servir como "Servidor de Lab".
 * Instalação e configuração do **Docker Engine** para isolar a aplicação do sistema principal.
 
-![Terminal com Docker](docker-terminal.jpg)
+![Terminal com Docker](terminal.png)
 *(Acima: Terminal do Linux gerenciando o container do DVWA)*
 
 ### Passo 2: O Desafio de Conectividade
@@ -53,8 +53,6 @@ Com o ambiente rodando, realizei um ataque de **SQL Injection (SQLi)** a partir 
 **Resultado:**
 A injeção foi bem-sucedida, retornando a lista completa de usuários e senhas (hashes) do banco de dados, confirmando a criticidade da falha.
 
-![Ataque SQL Injection](sql-injection.jpg)
-*(Acima: Tela do DVWA exibindo o dump do banco de dados após a injeção)*
 
 ---
 
