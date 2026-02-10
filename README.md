@@ -32,9 +32,6 @@ O notebook HP apresentava limitações de hardware. Para contornar isso:
 * Configuração de rede estática para servir como "Servidor de Lab".
 * Instalação e configuração do **Docker Engine** para isolar a aplicação do sistema principal.
 
-![Terminal com Docker](terminal.png)
-*(Acima: Terminal do Linux gerenciando o container do DVWA)*
-
 ### Passo 2: O Desafio de Conectividade
 Durante o setup, identifiquei uma incompatibilidade no driver da placa Wi-Fi do Linux.
 * **Solução:** Utilizei conexão via cabo (Ethernet) diretamente no roteador/switch para garantir estabilidade e baixa latência durante os ataques.
@@ -53,7 +50,7 @@ Com o ambiente rodando, realizei um ataque de **SQL Injection (SQLi)** a partir 
 **Resultado:**
 A injeção foi bem-sucedida, retornando a lista completa de usuários e senhas (hashes) do banco de dados, confirmando a criticidade da falha.
 
-
+## 🛡️ Como corrigir esta vulnerabilidade Para prevenir o SQL Injection demonstrado, a aplicação deve utilizar Prepared Statements (Consultas Parametrizadas). Isso garante que o input do usuário seja tratado apenas como dado, e não como parte do comando SQL executado pelo servidor.
 ---
 
 ## 🚀 Competências Demonstradas
